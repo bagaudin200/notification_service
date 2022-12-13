@@ -54,4 +54,4 @@ services:
     depends_on:
       - redis
       - web
-      - celery 
+      - celery #celery

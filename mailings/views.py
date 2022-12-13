@@ -33,7 +33,7 @@ class MailingViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
     @action(detail=False, methods=['get'])
-    def fullinfo(self, request):
+    def fullinfo(self, request):                                   #info
         """
         Summary data for all mailings
         """

@@ -42,4 +42,4 @@ class TestStat(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['Total number of mailings'], 1)
         self.assertIsInstance(response.data['Total number of mailings'], int)
-        self.assertIsInstance(response.data['The number of messages sent'], dict)
+        self.assertIsInstance(response.data['The number of messages sent'], dict)    #test

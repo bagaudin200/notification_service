@@ -24,4 +24,4 @@ class TestModel(APITestCase):
         self.test_creates_clients()
         message = Message.objects.create(sending_status='No sent', mailing_id=1, client_id=1)
         self.assertIsInstance(message, Message)
-        self.assertEqual(message.sending_status, 'No sent')
+        self.assertEqual(message.sending_status, 'No sent')                      #test

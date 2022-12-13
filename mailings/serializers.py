@@ -13,7 +13,7 @@ class ClientSerializer(serializers.ModelSerializer):
         model = Client
         fields = "__all__"
 
-
+#serializer
 class MessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Message

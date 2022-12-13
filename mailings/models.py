@@ -70,6 +70,6 @@ class Message(models.Model):
         return f'Message {self.id} with text {self.mailing} for {self.client}'
 
     class Meta:
-        verbose_name = 'Message'
+        verbose_name = 'message'
         verbose_name_plural = 'Messages'
 

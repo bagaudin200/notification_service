@@ -7,7 +7,7 @@ from .tasks import send_message
 
 
 @receiver(post_save, sender=Mailing, dispatch_uid="create_message")
-def create_message(sender, instance, created, **kwargs):
+def create_message(sender, instance, created, **kwargs):                 #createmessage
     if created:
         mailing = Mailing.objects.filter(id=instance.id).first()
         clients = Client.objects.filter(Q(mobile_operator_code=mailing.mobile_operator_code) |

@@ -16,7 +16,7 @@ TOKEN = os.getenv("TOKEN")
 
 
 @app.task(bind=True, retry_backoff=True)
-def send_message(self, data, client_id, mailing_id, url=URL, token=TOKEN):
+def send_message(self, data, client_id, mailing_id, url=URL, token=TOKEN):          #sendmessage
     mail = Mailing.objects.get(pk=mailing_id)
     client = Client.objects.get(pk=client_id)
     timezone = pytz.timezone(client.timezone)
