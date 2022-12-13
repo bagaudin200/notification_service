@@ -8,7 +8,7 @@
 1. Склонировать репозиторий с Github:
 
 ````
-git clone git@github.com:Witaly3/notification_service.git
+git clone git@github.com:bagaudin200/notification_service.git
 ````
 2. Перейти в директорию проекта
 
